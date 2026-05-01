@@ -193,10 +193,6 @@ based on abnormal cost, freight, or delivery patterns.
 
             prediction = result["predicted_invoice_flag"].iloc[0]
 
-            probability = None
-            if "flag_probability" in result.columns:
-                probability = result["flag_probability"].iloc[0]
-
             if prediction == 1:
                 st.error("🚨 Invoice should be flagged for manual approval.")
                 prediction_label = "Flagged for Manual Approval"
@@ -204,15 +200,7 @@ based on abnormal cost, freight, or delivery patterns.
                 st.success("✅ Invoice does not require manual approval.")
                 prediction_label = "Not Flagged"
 
-            col_a, col_b = st.columns(2)
 
-            with col_a:
-                st.metric("Prediction", prediction_label)
-
-            with col_b:
-                if probability is not None:
-                    st.metric("Flag Probability", f"{probability * 100:.2f}%")
-                else:
-                    st.metric("Flag Probability", "Not Available")
+            st.metric("Prediction", prediction_label)
 
             st.dataframe(result, use_container_width=True)
