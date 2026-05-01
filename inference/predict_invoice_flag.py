@@ -1,5 +1,11 @@
 import joblib
 import pandas as pd
+from pathlib import Path
+
+base_dir = Path(__file__).resolve().parent
+project_root = base_dir.parent
+model_path = f'{project_root}/invoice_flag/invoice_flag_model/predict_invoice_flag.pkl'
+scaler_path = f'{project_root}/invoice_flag/invoice_flag_model/scaler.pkl'
 
 features = ['invoice_quantity',
  'invoice_amount',
@@ -9,8 +15,6 @@ features = ['invoice_quantity',
  'total_amount',
  'avg_receiving_delay']
 
-model_path = 'invoice_flag/invoice_flag_model/predict_invoice_flag.pkl'
-scaler_path = 'invoice_flag/invoice_flag_model/scaler.pkl'
 
 def load_model(model_path: str = model_path,scaler_path: str = scaler_path):
     

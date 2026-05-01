@@ -1,7 +1,10 @@
 import joblib
 import pandas as pd
+from pathlib import Path
 
-model_path = 'cost_prediction/cost_prediction_model/predict_freight_cost.pkl'
+base_dir = Path(__file__).resolve().parent
+project_root = base_dir.parent
+model_path = f'{project_root}/cost_prediction/cost_prediction_model/predict_freight_cost.pkl'
 
 def load_model(model_path):
     
