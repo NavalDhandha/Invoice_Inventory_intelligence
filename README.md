@@ -4,6 +4,10 @@ An end-to-end machine learning and Streamlit application that helps finance, pro
 
 This project simulates a real-world invoice intelligence workflow where purchase order, invoice, freight, and receiving-delay patterns are used to support better cost forecasting, anomaly detection, and faster finance operations.
 
+<img width="2806" height="1278" alt="image" src="https://github.com/user-attachments/assets/ff263c34-cb58-447a-b6b0-fa3655163dbe" />
+
+<img width="2766" height="1428" alt="image" src="https://github.com/user-attachments/assets/9a2d40e6-ddae-447a-9b97-c77045947af4" />
+
 ---
 
 ## Project Overview
