@@ -4,10 +4,6 @@ An end-to-end machine learning and Streamlit application that helps finance, pro
 
 This project simulates a real-world invoice intelligence workflow where purchase order, invoice, freight, and receiving-delay patterns are used to support better cost forecasting, anomaly detection, and faster finance operations.
 
-<img width="2806" height="1278" alt="image" src="https://github.com/user-attachments/assets/ff263c34-cb58-447a-b6b0-fa3655163dbe" />
-
-<img width="2766" height="1428" alt="image" src="https://github.com/user-attachments/assets/9a2d40e6-ddae-447a-9b97-c77045947af4" />
-
 ---
 
 ## Project Overview
@@ -19,10 +15,14 @@ This project addresses that problem by building an internal analytics portal tha
 1. **Freight Cost Prediction**
    - Predicts expected freight cost based on invoice quantity and invoice dollar amount.
    - Helps teams improve cost forecasting, budgeting, and vendor cost visibility.
+<img width="2806" height="1278" alt="image" src="https://github.com/user-attachments/assets/ff263c34-cb58-447a-b6b0-fa3655163dbe" />
+
 
 2. **Invoice Manual Approval Flagging**
    - Predicts whether a vendor invoice should be flagged for manual approval.
    - Uses invoice, purchase order, freight, and receiving delay patterns to support exception-based review.
+<img width="2766" height="1428" alt="image" src="https://github.com/user-attachments/assets/9a2d40e6-ddae-447a-9b97-c77045947af4" />
+
 
 The final output is a Streamlit application where users can input invoice details and receive real-time machine learning predictions.
 
