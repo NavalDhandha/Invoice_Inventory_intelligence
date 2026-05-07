@@ -26,6 +26,8 @@ This project addresses that problem by building an internal analytics portal tha
 
 The final output is a Streamlit application where users can input invoice details and receive real-time machine learning predictions.
 
+https://invoiceinventoryintelligence-naval.streamlit.app/
+
 ---
 
 ## Business Problem
